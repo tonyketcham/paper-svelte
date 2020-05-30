@@ -1,4 +1,6 @@
 <script>
+  export let resize = true;
+
   import { paper } from "paper";
   import { onMount } from "svelte";
 
@@ -23,4 +25,16 @@
   onMount(newPaperCanvas);
 </script>
 
-<canvas id="paperCanvas" resize />
+<style>
+  /* Scale canvas with resize attribute to full size */
+  canvas[resize] {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+{#if !resize}
+  <canvas id="paperCanvas" />
+{:else}
+  <canvas id="paperCanvas" resize />
+{/if}
