@@ -1,5 +1,5 @@
 <script>
-  // import { paper } from "paper";
+  import { paper } from "paper";
   import { onMount } from "svelte";
 
   function newPaperCanvas() {
@@ -23,4 +23,4 @@
   onMount(newPaperCanvas);
 </script>
 
-<canvas id="paperCanvas" />
+<canvas id="paperCanvas" resize />

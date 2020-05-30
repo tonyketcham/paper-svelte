@@ -1,5 +1,5 @@
 <script>
-  import PaperCanvas from "PaperCanvas.svelte";
+  import PaperCanvas from "./PaperCanvas.svelte";
 </script>
 
 <style>
