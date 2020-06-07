@@ -3,7 +3,6 @@
 
   import { paper } from "paper";
   import newPaperCanvas from "./paperCanvas.js";
-  import { onMount } from "svelte";
 </script>
 
 <style>
